@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudStudy - La nube explicada simple</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cloud<span>Study</span></div>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="conceptos.html">Conceptos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>La computación en la nube, explicada simple</h1>
+        <p>Una guía rápida para entender qué es la nube, cómo se usa y por qué hoy está en casi todos lados.</p>
+        <a href="conceptos.html" class="btn btn-primary">Ver conceptos</a>
+        <a href="contacto.html" class="btn btn-secondary">Contactanos</a>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>Los 3 modelos de servicio</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">IaaS</span>
+                    <h3>Infraestructura</h3>
+                    <p>Te alquilan servidores, redes y almacenamiento. Vos instalás y manejás todo lo demás.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">PaaS</span>
+                    <h3>Plataforma</h3>
+                    <p>Te dan un entorno listo para programar y publicar tu app, sin ocuparte de los servidores.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">SaaS</span>
+                    <h3>Software</h3>
+                    <p>Usás una aplicación ya hecha desde el navegador. El proveedor se encarga de todo.</p>
+                </div>
+            </div>
+
+            <h2>Sobre este sitio</h2>
+            <p>
+                Este sitio web es estático y está alojado en un bucket S3 simulado con
+                <strong>Floci</strong> dentro de un contenedor <strong>Docker</strong>.
+                Todo el despliegue se define como código con <strong>Terraform</strong>.
+            </p>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 CloudStudy - Trabajo práctico de Cloud Computing</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos - CloudStudy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cloud<span>Study</span></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="conceptos.html" class="active">Conceptos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="page-title">Conceptos clave</h1>
+            <p class="subtitle">Lo esencial para entender la nube.</p>
+
+            <h2>Características de la nube</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Autoservicio bajo demanda</h3>
+                    <p>Pedís y configurás los recursos vos mismo, cuando los necesitás y sin trámites.</p>
+                </div>
+                <div class="card">
+                    <h3>Rápida elasticidad</h3>
+                    <p>Los recursos crecen o se reducen según la demanda, para que el servicio no se caiga.</p>
+                </div>
+                <div class="card">
+                    <h3>Pago por uso</h3>
+                    <p>Pagás solo lo que usás y por el tiempo que lo usás, como la luz o el agua.</p>
+                </div>
+            </div>
+
+            <h2>IaaS vs PaaS vs SaaS</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Modelo</th><th>Qué recibís</th><th>Ejemplos</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>IaaS</strong></td><td>Servidores, redes y almacenamiento virtualizados</td><td>Amazon EC2, Azure VMs, Google Compute Engine</td></tr>
+                        <tr><td><strong>PaaS</strong></td><td>Entorno completo para desarrollar y desplegar</td><td>Heroku, Google App Engine, AWS Elastic Beanstalk</td></tr>
+                        <tr><td><strong>SaaS</strong></td><td>Aplicaciones listas para usar</td><td>Google Workspace, Microsoft 365, Slack</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Estrategias de despliegue</h2>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">Single AZ</span>
+                    <p>Todo en una sola zona. Económico, pero si esa zona falla, se cae todo.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">Multi-AZ</span>
+                    <p>El sistema se reparte en varias zonas de una región. Si una falla, otra sigue funcionando.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">Multi-Región</span>
+                    <p>Copias en regiones lejanas, ideal para recuperarse de desastres y atender usuarios de todo el mundo.</p>
+                </div>
+            </div>
+
+            <h2>Infraestructura como código</h2>
+            <p>
+                Con herramientas como <strong>Terraform</strong> se describe en archivos de texto cómo
+                debe quedar la infraestructura, y la herramienta la crea sola. Así el despliegue
+                es repetible y queda registrado con historial.
+            </p>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 CloudStudy - Trabajo práctico de Cloud Computing</footer>
+</body>
+</html>
